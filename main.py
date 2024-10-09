@@ -44,7 +44,7 @@ phase = asyncio.run(weather("raipur"))
 phases = [phase for phase in python_weather.enums.Phase]
 
 # Read moon phases from art.txt
-display_phase = read_moon_phase("art.txt", phases.index(phase))
+display_phase = read_moon_phase("prt.txt", phases.index(phase))
 
 
 if __name__ == "__main__":
