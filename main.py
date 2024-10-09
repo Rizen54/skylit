@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+
 import asyncio
+
 import python_weather
+from termcolor import colored
 
 def read_moon_phase(filename, start):
     """
@@ -48,4 +51,4 @@ display_phase = read_moon_phase("prt.txt", phases.index(phase))
 
 
 if __name__ == "__main__":
-    print("\n" + "".join(display_phase), end="")
+    print(colored("\n" + "".join(display_phase), "yellow"), end="")
