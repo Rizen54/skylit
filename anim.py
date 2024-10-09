@@ -46,6 +46,6 @@ if __name__ == "__main__":
     clear_screen()
     while True:
       for phase in phases:
-          print("\n"+"".join(phase), end="")
+          print(colored("\n"+"".join(phase), "yellow"), end="")
           time.sleep(0.3)
           clear_screen()
