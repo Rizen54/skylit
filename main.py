@@ -43,7 +43,7 @@ async def weather(location):
                 n = False
         return phase
 
-phase = asyncio.run(weather("raipur"))
+phase = asyncio.run(weather("Delhi"))
 phases = [phase for phase in python_weather.enums.Phase]
 
 # Read moon phases from art.txt
